@@ -1,0 +1,214 @@
+@charset "utf_8";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #e2dcdc;
+    font-family: sans-serif;
+}
+
+h1,h2 {
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+main {
+    display: block;
+    background: #000000;
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    animation: surgir 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -5% cover 40%;
+}
+
+section.modulo p {
+    margin-bottom: 40px;
+    text-align: justify;
+    font-size: 1.4em;
+}
+
+section.modulo h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+section.modulo.content {
+    padding: 42px 0;
+    background: #000000;
+}
+
+section.modulo.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section.modulo.parallax h1 {
+    color: #ffffff91;
+    text-shadow: 5px 5px 5px #774444d0;
+    font-size: 4em;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 50;
+}
+
+section.modulo.parallax:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(170, 16, 16, 0) 0, rgba(0, 0, 0, 0) 00%, #000000 100%);
+
+}
+
+@keyframes surgir {
+    from {
+        opacity: 0;
+        translate: -100vw 0;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+
+}
+
+
+
+section.modulo.parallax-1 {
+    background-image: url("https://justica.sp.gov.br/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-15-at-11.52.0625.jpeg");
+}
+
+section.modulo.parallax-2 {
+    background-image: url("https://s2-g1.glbimg.com/uVzwbVtsYifAKTPWGGf98ILyzaE=/0x0:800x556/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/p/5/t1EBNaS6KvzWxcHzltzA/imagem1-116544092-watercarriersbrazil1830s.png");
+}
+section.modulo.parallax-3{
+    background-image:url("https://i.pinimg.com/564x/87/49/07/87490770a1b466c64b01ca96de65c085.jpg");
+}
+
+
+
+
+
+
+
+   
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.3em;
+    font-family: 'Bebas Neue', sans-serif;
+    background: #000000
+}
+
+.main-header{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-header h1 {
+
+    font-size: 4em;
+    margin-bottom: 2em;
+    line-height: 1.2em;
+}
+
+.main-header h1 span {
+    color: #074e27;
+}
+
+.container {
+
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 2em;
+    
+}
+
+
+
+
+
+.galeria div:hover {
+    flex: 2;
+
+    
+}
+
+.galeria:hover div:not(:hover) {
+    filter: blur(5px) grayscale(100%) opacity(90%) sepia(50%)
+    
+}
+h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
+    
+}
+p{ 
+    font-size: 18px
+}
+.galeria{
+    display:flex;
+    height: 20em;
+    margin: 2em;
+    gap: 0.5em;
+}
+.galeria div{
+    flex: 1;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    transition: all 0.6s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.galeria div:hover{
+    flex: 2;
+    
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} h4{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 9%;
+}
